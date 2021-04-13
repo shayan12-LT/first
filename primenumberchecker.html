@@ -1,0 +1,24 @@
+<html><!-- I have modified this program by removing some loops and if else statements.--><head></head> 
+ <body> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <h2>Prime Number Checker</h2> 
+  <p>Enter a prime number:</p> 
+  <input type="number" id="number"> 
+  <button type="button" id="check" onclick="check()">Check</button> 
+  <div id="out"></div> 
+  <script>
+   function check()  {
+     var number = document.getElementById("number").value;
+  if(number == 1){
+    document.getElementById("out").innerHTML=("1 is not prime number by definition of prime.")
+  }
+   else if(number % 2 == 0) {
+      document.getElementById("out").innerHTML= number+" is not a prime number.";
+    }
+    else{
+     document.getElementById("out").innerHTML= number+" is a prime number.";
+   }
+   }
+ </script> 
+ 
+</body></html>
